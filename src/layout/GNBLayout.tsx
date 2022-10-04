@@ -1,4 +1,4 @@
-import { Box, Stack } from "@mui/material";
+import { Box, Link, Stack } from "@mui/material";
 import React from "react";
 
 interface props {
@@ -16,7 +16,9 @@ const GNBLayout = ({ children }: props) => {
         top="0px"
         sx={{ height: "50px", borderBottom: "1px solid black" }}
       >
-        <Box>Menu1</Box>
+        <Link href="/jsprac" underline="none" sx={{ color: "black" }}>
+          jsPrac1
+        </Link>
         <Box>Menu2</Box>
         <Box>Menu3</Box>
         <Box>Menu4</Box>

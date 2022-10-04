@@ -1,4 +1,4 @@
-import { Box, Button } from "@mui/material";
+import { Box, Button, Link, Typography } from "@mui/material";
 import React from "react";
 import { useForm } from "react-hook-form";
 import LoginField from "../login/LoginField";
@@ -26,6 +26,7 @@ const LoginPage = () => {
           로그인
         </Button>
       </form>
+      <Link href="/memberjoin">회원가입</Link>
     </Box>
   );
 };
