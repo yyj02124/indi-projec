@@ -69,21 +69,25 @@ const JspracOne = () => {
 
   const [data, setData] = useState();
 
-  const get = (url) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", url);
-    xhr.send();
+  // const get = (url) => {
+  //   const xhr = new XMLHttpRequest();
+  //   xhr.open("GET", url);
+  //   xhr.send();
 
-    xhr.onload = () => {
-      if (xhr.status === 200) {
-        // 서버의 응답을 콘솔에 출력한다.
-        console.log(JSON.parse(xhr.response));
-        setData(JSON.parse(xhr.response));
-      } else {
-        console.error(`${xhr.status} ${xhr.statusText}`);
-      }
-    };
-  };
+  //   xhr.onload = () => {
+  //     if (xhr.status === 200) {
+  //       // 서버의 응답을 콘솔에 출력한다.
+  //       console.log(JSON.parse(xhr.response));
+  //       setData(JSON.parse(xhr.response));
+  //     } else {
+  //       console.error(`${xhr.status} ${xhr.statusText}`);
+  //     }
+  //   };
+  // };
+
+  const get = (url) => fetch(url)
+    .then((res) => res.json())
+    .then((data) => setData(data));
 
   useEffect(() => {
     get(`https://jsonplaceholder.typicode.com/posts`);
