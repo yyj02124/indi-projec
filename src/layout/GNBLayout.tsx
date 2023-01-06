@@ -19,8 +19,12 @@ const GNBLayout = ({ children }: props) => {
         <Link href="/jsprac" underline="none" sx={{ color: "black" }}>
           jsPrac1
         </Link>
-        <Link href='/tube' underline="hover" sx={{color:'red'}}>TUBE</Link>
-        <Box>Menu3</Box>
+        <Link href="/tube" underline="hover" sx={{ color: "red" }}>
+          TUBE
+        </Link>
+        <Link href="/landing" underline="none" sx={{ color: "black" }}>
+          LandingPage
+        </Link>
         <Box>Menu4</Box>
         <Box>Menu5</Box>
       </Stack>

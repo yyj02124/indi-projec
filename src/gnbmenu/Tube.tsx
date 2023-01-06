@@ -22,7 +22,7 @@ const Tube = () => {
           justifyContent: "start",
         }}
       >
-        {content(10)}
+        {content(5)}
       </Box>
     </Box>
   );

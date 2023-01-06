@@ -4,6 +4,7 @@ import JspracOne from "./gnbmenu/jsprac/JspracOne";
 import Tube from "./gnbmenu/Tube";
 import CheckPage from "./Page/CheckPage";
 import ErrorPage from "./Page/ErrorPage";
+import LandingMainPage from "./Page/LandingMainPage";
 import LoginPage from "./Page/LoginPage";
 import MainPage from "./Page/MainPage";
 import MemberJoin from "./Page/MemberJoin";
@@ -21,11 +22,12 @@ const routes = [
       { path: "login", element: <LoginPage /> },
       { path: "check", element: <CheckPage /> },
       { path: "memberjoin", element: <MemberJoin /> },
-      { path: "jsprac", element: <JspracOne />},
-      { path: "tube", element: <Tube />},
+      { path: "jsprac", element: <JspracOne /> },
+      { path: "tube", element: <Tube /> },
+      { path: "landing", element: <LandingMainPage /> },
     ],
   },
-  
+
   {
     path: "*",
     element: <ErrorPage />,
